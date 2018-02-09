@@ -92,7 +92,7 @@ function(source_map_consumer) {
   };  
 
   var isSafari = function() {
-    return navigator.userAgent.toLowerCase().indexOf('safari') > -1;
+    return navigator.userAgent.toLowerCase().indexOf('safari') > -1 || navigator.userAgent.toLowerCase().indexOf('iphone') > -1;
   };
 		
   var isIE11Plus = function() {
